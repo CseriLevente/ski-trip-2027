@@ -221,18 +221,20 @@
 
   .pin{position:absolute;left:0;top:0;cursor:pointer;}
   .pin-pt{position:absolute;left:-5px;top:-5px;width:10px;height:10px;border-radius:50%;background:var(--ink);border:2px solid var(--land);}
-  .pin-body{position:absolute;left:0;bottom:9px;transform:translateX(-50%);transform-origin:50% calc(100% + 9px);display:flex;align-items:center;gap:6px;padding:4px 10px 4px 4px;border-radius:999px;
+  .pin-body{position:absolute;left:0;bottom:9px;transform:translateX(var(--px,-50%));transform-origin:var(--ax,50%) calc(100% + 9px);display:flex;align-items:center;gap:6px;padding:4px 10px 4px 4px;border-radius:999px;
     background:var(--ink);color:var(--surface);font:600 14px/1 var(--display);white-space:nowrap;box-shadow:var(--pop-shadow);transition:transform .15s, opacity .15s;}
-  .pin-body::after{content:"";position:absolute;left:50%;bottom:-6px;margin-left:-6px;border-left:6px solid transparent;border-right:6px solid transparent;border-top:7px solid var(--ink);}
+  .pin-body::after{content:"";position:absolute;left:var(--ax,50%);bottom:-6px;margin-left:-6px;border-left:6px solid transparent;border-right:6px solid transparent;border-top:7px solid var(--ink);}
   .pin-body .badge{background:var(--surface);color:var(--ink);}
   .pin-pr{display:none;font:600 12.5px/1 var(--data);font-variant-numeric:tabular-nums;padding-left:8px;margin-left:2px;border-left:1px solid color-mix(in srgb, var(--surface) 35%, transparent);}
   .pin.sel .pin-pr{display:inline;}
   #map.narrow .pin.sel .pin-nm{display:none;}
   #map.narrow .pin.sel .pin-pr{border-left:0;padding-left:0;margin-left:0;}
-  .pin.sel .pin-body{transform:translateX(-50%) scale(1.1);}
+  .pin.sel .pin-body{transform:translateX(var(--px,-50%)) scale(1.1);}
   .pin.dim{opacity:.5;}
-  .pin:hover .pin-body{transform:translateX(-50%) scale(1.06);}
-  .pin.sel:hover .pin-body{transform:translateX(-50%) scale(1.1);}
+  .pin:hover .pin-body{transform:translateX(var(--px,-50%)) scale(1.06);}
+  .pin.sel:hover .pin-body{transform:translateX(var(--px,-50%)) scale(1.1);}
+  .pin[data-side="l"]{--px:calc(-100% + 16px);--ax:calc(100% - 16px);}
+  .pin[data-side="r"]{--px:-16px;--ax:16px;}
   .leaflet-marker-icon:focus{outline:none;}
   .leaflet-marker-icon:focus-visible .pin-body,.leaflet-marker-icon:focus-visible .lift-pt{outline:2px solid var(--ink);outline-offset:3px;}
 
@@ -436,11 +438,11 @@ var DRIVE={
 };
 var EUR_CHF=0.9359;
 var STAYS={
-  A:{name:"Tauernhütte",kind:"Holiday house",place:"Walchen, Piesendorf (Hacklweg 2)",short:"Walchen",ll:[47.28755,12.68872],total:1855,
+  A:{name:"Tauernhütte",kind:"Holiday house",place:"Walchen, Piesendorf (Hacklweg 2)",short:"Walchen",side:"l",ll:[47.28755,12.68872],total:1855,
      rooms:"3 bedrooms, each with its own shower room · a double bed in every room, plus a bunk in one · 100 m²",rating:"Booking.com 8.6 · 10 reviews",cancel:"Strict: before ~7 Nov you lose half the 25% deposit; after that 50–100% of the price",
      note:"Written offer from the hosts: €1,982 for 8 adults, 7–12 Feb, with linen, towels, cleaning and tourist tax included. Plenty of free parking, flat valley road.",noteKind:"ok",
      url:"https://www.hauspiesendorf.com/tauernhuette",link:"host website"},
-  B:{name:"Wood 2",kind:"Apartment",place:"Piesendorf, between Zell am See and Kaprun",short:"Piesendorf",ll:[47.28996,12.71663],total:1940,
+  B:{name:"Wood 2",kind:"Apartment",place:"Piesendorf, between Zell am See and Kaprun",short:"Piesendorf",side:"r",ll:[47.28996,12.71663],total:1940,
      rooms:"2 bedrooms (king + single; bunk) + 2 pull-out sofas · 1 bathroom",rating:"Airbnb ★ 4.75 · 4 reviews",cancel:"Free cancellation for 24 h after booking; partial refund before 31 Jan",
      note:"CHF 1,846 on Airbnb plus €2.50 per person per night tourist tax paid on site (about CHF 94). One bathroom for eight.",noteKind:"warn",
      url:"https://www.airbnb.com/rooms/760841650332384273?check_in=2027-02-07&check_out=2027-02-12&adults=8",link:"Airbnb"}
@@ -674,7 +676,7 @@ function liftPopup(id){
 var stayM={};
 KEYS.forEach(function(k){
   var s=STAYS[k];
-  var m=divM(s.ll,'<div class="pin"><i class="pin-pt"></i><div class="pin-body"><span class="badge">'+k+'</span><span class="pin-nm">'+esc(s.name)+'</span><span class="pin-pr">'+chf(s.total)+'</span></div></div>',{interactive:true,z:1000,title:k+" · "+s.name+" (click for price)"});
+  var m=divM(s.ll,'<div class="pin" data-side="'+(s.side||"c")+'"><i class="pin-pt"></i><div class="pin-body"><span class="badge">'+k+'</span><span class="pin-nm">'+esc(s.name)+'</span><span class="pin-pr">'+chf(s.total)+'</span></div></div>',{interactive:true,z:1000,title:k+" · "+s.name+" (click for price)"});
   m.addTo(map); stayM[k]=m;
   m.on("click",function(){select(k,{pop:true});});
 });
