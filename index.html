@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
-<meta name="description" content="Three Airbnbs near Zell am See for 5–10 Feb 2027: prices and drive times to the nearest lift on Schmittenhöhe, Kitzsteinhorn and the Skicircus.">
-<meta property="og:title" content="Three stays, three mountains">
-<meta property="og:description" content="Ski trip 5–10 Feb 2027 · 7 people · click a stay for its price and drive times to the lifts.">
+<meta name="description" content="The two remaining stays near Zell am See for 7–12 Feb 2027 (Tauernhütte and Wood 2): prices and drive times to the nearest lift on Schmittenhöhe, Kitzsteinhorn and the Skicircus.">
+<meta property="og:title" content="Two stays, three mountains">
+<meta property="og:description" content="Ski trip 7–12 Feb 2027 · 8 people · Tauernhütte vs Wood 2: prices and drive times to the lifts.">
 <meta property="og:type" content="website">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M2 27 12 9l6 10 4-6 8 14z' fill='%2300709C'/%3E%3Cpath d='M12 9l-2.6 4.6L12 12l2.4 2.4z' fill='%23fff'/%3E%3C/svg%3E">
-<title>Three Stays, Three Mountains</title>
+<title>Two Stays, Three Mountains</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
@@ -355,22 +355,21 @@
 </head>
 <body>
 <main class="wrap">
-  <p class="eyebrow">Zell am See–Kaprun · 5–10 Feb 2027 · 7 people · Ski ALPIN CARD</p>
-  <h1>Three stays, three mountains</h1>
-  <p class="standfirst">The three Airbnbs on the shortlist, and how far each one is from the nearest lift on <strong>Schmittenhöhe</strong>, <strong>Kitzsteinhorn</strong> and the <strong>Skicircus</strong>. Click a stay to see its price and its three drives.</p>
+  <p class="eyebrow">Zell am See–Kaprun · 7–12 Feb 2027 · 8 people · Ski ALPIN CARD</p>
+  <h1>Two stays, three mountains</h1>
+  <p class="standfirst">Our two remaining options, both in Piesendorf: the <strong>Tauernhütte</strong> in Walchen (written offer from the hosts) and <strong>Wood 2</strong> (Airbnb). The map shows how far each is from the nearest lift on <strong>Schmittenhöhe</strong>, <strong>Kitzsteinhorn</strong> and the <strong>Skicircus</strong>. Click a stay to see its price and its three drives.</p>
 
   <div class="findings">
-    <div class="finding"><span class="fig">6 <small>min</small></span><p>From Wood 2 in Piesendorf to Schmittenhöhe, and the same to the Kaprun lift that takes you up to Kitzsteinhorn.</p></div>
-    <div class="finding"><span class="fig">CHF 37 <small>pp / night</small></span><p>Örgenbauer is the cheapest, and the closest of the three to the Skicircus (Leogang, 18 min).</p></div>
-    <div class="finding"><span class="fig">95 <small>min</small></span><p>Wolke 26's three drives added together. Wood 2's add up to 37 and Örgenbauer's to 57.</p></div>
+    <div class="finding"><span class="fig">CHF 232 <small>each</small></span><p>The Tauernhütte for the whole trip, everything included. Wood 2 works out at about CHF 243 each once the local tourist tax is added.</p></div>
+    <div class="finding"><span class="fig">3 <small>vs 1</small></span><p>Shower rooms: the Tauernhütte has one per bedroom. Wood 2 has a single bathroom for all eight of us.</p></div>
+    <div class="finding"><span class="fig">2–3 <small>min</small></span><p>How much closer Wood 2 is to each mountain. Its three drives add up to 37 minutes, the Tauernhütte's to 44.</p></div>
   </div>
 
   <div class="bar">
     <div class="seg" role="group" aria-label="Choose a stay">
-      <button type="button" class="all" data-pick="all" aria-pressed="true">All three</button>
-      <button type="button" data-pick="A" aria-pressed="false"><span class="badge">A</span>Wolke 26</button>
-      <button type="button" data-pick="B" aria-pressed="false"><span class="badge">B</span>Örgenbauer</button>
-      <button type="button" data-pick="C" aria-pressed="false"><span class="badge">C</span>Wood 2</button>
+      <button type="button" class="all" data-pick="all" aria-pressed="true">Both</button>
+      <button type="button" data-pick="A" aria-pressed="false"><span class="badge">A</span>Tauernhütte</button>
+      <button type="button" data-pick="B" aria-pressed="false"><span class="badge">B</span>Wood 2</button>
     </div>
     <div class="legend" aria-label="Legend">
       <span class="h-S"><i class="sw"></i>Schmittenhöhe</span>
@@ -380,18 +379,18 @@
   </div>
 
   <div class="stage">
-    <div id="map" data-sel="all" role="region" aria-label="Map of the three stays and the nearest lifts"></div>
+    <div id="map" data-sel="all" role="region" aria-label="Map of the two stays and the nearest lifts"></div>
     <aside class="panel" id="panel" aria-live="polite"></aside>
   </div>
-  <p class="hint">Lines are the fastest road route from a stay to the closest valley lift on each mountain, coloured by mountain. Squares are lift valley stations; click one for its drive time from all three stays. Scroll-zoom works once you've clicked the map.</p>
+  <p class="hint">Lines are the fastest road route from a stay to the closest valley lift on each mountain, coloured by mountain. Squares are lift valley stations; click one for its drive time from both stays. Scroll-zoom works once you've clicked the map.</p>
 
   <section class="sec">
     <h2>Side by side</h2>
-    <p class="sec-intro">Airbnb totals for 5–10 February 2027 with 7 guests, fees included. Drive times are one-way, by car, to the closest lift on each mountain. The best value in each column is marked green.</p>
+    <p class="sec-intro">Totals for 7–12 February 2027 with 8 guests: the Tauernhütte's written offer (€1,982, everything included) and Wood 2's Airbnb price plus the tourist tax paid on site. Drive times are one-way, by car, to the closest lift on each mountain. The better value in each column is marked green.</p>
     <div class="tbl-scroll"><table class="grid" id="sum"></table></div>
 
     <details class="more">
-      <summary>Every valley station, from all three stays</summary>
+      <summary>Every valley station, from both stays</summary>
       <div class="tbl-scroll" style="margin-top:12px"><table class="grid full" id="full"></table></div>
     </details>
   </section>
@@ -399,14 +398,14 @@
   <section class="sec">
     <h2>Reading the numbers</h2>
     <div class="notes">
-      <div><h3>Drive times are best-case</h3><p>They come from OSRM routing on OpenStreetMap roads: a car with no traffic, snow or parking. On a snowy February morning, add 20–40% and time to park. Wolke 26 sits up a hillside above Taxenbach, so ask the host whether the access road needs chains.</p></div>
-      <div><h3>Kitzsteinhorn starts in Kaprun</h3><p>The Maiskogelbahn in Kaprun village connects to the glacier by lift (the 3K K-onnection), so that's where the times point. Driving to the glacier base station (Gletscherjet) takes 13 min from Wood 2, 32 from Örgenbauer and 37 from Wolke 26.</p></div>
-      <div><h3>Skicircus: two ways in</h3><p>From Wood 2 and Wolke 26, the quickest way in is the Schönleitenbahn at Vorderglemm; Saalbach centre is about 4 minutes further. From Örgenbauer, Leogang is quicker. The zellamseeXpress at Viehhofen goes up Schmittenhöhe from the Glemm valley side; there's no ski link from it into the Skicircus.</p></div>
-      <div><h3>Pins and prices</h3><p>Airbnb shows an approximate location until you book, so a pin can be a few hundred metres off. Prices were checked in late September 2026 and will move. Euro figures use the ECB rate of 0.9445 CHF per euro (25 Sep 2026).</p></div>
+      <div><h3>Drive times are best-case</h3><p>They come from OSRM routing on OpenStreetMap roads: a vehicle with no traffic, snow or parking. On a snowy February morning, add 20–40% and time to park. Both stays are on flat valley roads with parking at the house, and the main lifts all have free open-air car parks.</p></div>
+      <div><h3>Kitzsteinhorn starts in Kaprun</h3><p>The Maiskogelbahn in Kaprun village connects to the glacier by lift (the 3K K-onnection), so that's where the times point. Driving to the glacier base station (Gletscherjet) takes 15 min from the Tauernhütte and 13 from Wood 2.</p></div>
+      <div><h3>Skicircus: two ways in</h3><p>From both stays, the quickest way in is the Schönleitenbahn at Vorderglemm (27 and 25 min); Saalbach centre is about 4 minutes further. The zellamseeXpress at Viehhofen goes up Schmittenhöhe from the Glemm valley side; there's no ski link from it into the Skicircus.</p></div>
+      <div><h3>Pins and prices</h3><p>The Tauernhütte pin is its exact address. Airbnb shows an approximate location until you book, so the Wood 2 pin can be a few hundred metres off. Prices were checked 7–9 October 2026. Franc figures use the ECB rate of 0.9359 CHF per euro (6 Oct 2026).</p></div>
     </div>
   </section>
 
-  <p class="foot">Map data © OpenStreetMap contributors · routing: OSRM · prices: Airbnb</p>
+  <p class="foot">Map data © OpenStreetMap contributors · routing: OSRM · prices: host offer and Airbnb</p>
 </main>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script>
@@ -432,36 +431,28 @@ var LIFTS={
 };
 var LIFT_ORDER=["S1","S2","S3","S4","K1","K2","C1","C2","C3","C5","C6"];
 var DRIVE={
-  A:{S1:[27,25.2],S2:[24,23.2],S3:[31,26.9],S4:[36,35.0],K1:[30,28.1],K2:[37,34.5],C1:[41,39.7],C2:[45,43.1],C3:[46,43.3],C5:[49,48.1],C6:[48,47.0]},
-  B:{S1:[15,12.8],S2:[18,16.0],S3:[19,14.5],S4:[16,14.1],K1:[24,21.4],K2:[32,27.9],C1:[22,18.8],C2:[26,22.2],C3:[26,22.4],C5:[20,15.6],C6:[18,14.5]},
-  C:{S1:[10,8.9],S2:[6,5.8],S3:[14,10.6],S4:[20,18.9],K1:[6,4.5],K2:[13,10.9],C1:[25,23.6],C2:[29,27.0],C3:[30,27.3],C5:[33,31.5],C6:[32,30.4]}
+  A:{S1:[13,11.2],S2:[9,8.2],S3:[17,12.9],S4:[22,21.2],K1:[8,6.8],K2:[15,13.2],C1:[27,25.9],C2:[31,29.4],C3:[32,29.6],C5:[36,33.8],C6:[34,32.7]},
+  B:{S1:[10,8.9],S2:[6,5.8],S3:[14,10.6],S4:[20,18.9],K1:[6,4.5],K2:[13,10.9],C1:[25,23.6],C2:[29,27.0],C3:[30,27.3],C5:[33,31.5],C6:[32,30.4]}
 };
-var EUR_CHF=0.9445;
+var EUR_CHF=0.9359;
 var STAYS={
-  A:{name:"Wolke 26",kind:"Hilltop chalet",place:"Winkl, on the hillside above Taxenbach",short:"Winkl · Taxenbach",ll:[47.2794,12.9789],total:1716,
-     rooms:"3 bedrooms · 6 beds · 2 bathrooms",rating:"★ 5.0 · 1 review",cancel:"Free cancellation before 22 Jan",
-     note:"Furthest from all three mountains. It's a hillside chalet, so ask the host about the winter access road.",noteKind:"warn",
-     url:"https://www.airbnb.hu/rooms/1501232117662501860?check_in=2027-02-05&check_out=2027-02-10&adults=7"},
-  B:{name:"Örgenbauer",kind:"Farmhouse apartment",place:"South of Saalfelden",short:"Saalfelden",ll:[47.3912,12.8456],total:1295,
-     rooms:"3 bedrooms (2 doubles, 1 twin) + sofa bed · 1 bathroom",rating:"New listing · no reviews yet",cancel:"Free cancellation before 31 Jan · nothing to pay now",
-     note:"3rd floor of a farmhouse with its own entrance. Saalfelden Leogang Card included. One bathroom for seven.",noteKind:"ok",
-     url:"https://www.airbnb.hu/rooms/1160191975429367438?check_in=2027-02-05&check_out=2027-02-10&adults=7"},
-  C:{name:"Wood 2",kind:"Apartment",place:"Piesendorf, between Zell am See and Kaprun",short:"Piesendorf",ll:[47.28996,12.71663],total:1869,
-     rooms:"Up to 8 guests · 2 bedrooms · 6 beds · 1 bathroom",rating:"★ 4.75 · 4 reviews",cancel:"Free cancellation for 24 h after booking; partial refund before 29 Jan",
-     note:"Same price for 6, 7 or 8 people. Closest to Schmittenhöhe and Kitzsteinhorn by a wide margin.",noteKind:"ok",
-     url:"https://www.airbnb.hu/rooms/760841650332384273?check_in=2027-02-05&check_out=2027-02-10&adults=7"}
+  A:{name:"Tauernhütte",kind:"Holiday house",place:"Walchen, Piesendorf (Hacklweg 2)",short:"Walchen",ll:[47.28755,12.68872],total:1855,
+     rooms:"3 bedrooms, each with its own shower room · a double bed in every room, plus a bunk in one · 100 m²",rating:"Booking.com 8.6 · 10 reviews",cancel:"Strict: before ~7 Nov you lose half the 25% deposit; after that 50–100% of the price",
+     note:"Written offer from the hosts: €1,982 for 8 adults, 7–12 Feb, with linen, towels, cleaning and tourist tax included. Plenty of free parking, flat valley road.",noteKind:"ok",
+     url:"https://www.hauspiesendorf.com/tauernhuette",link:"host website"},
+  B:{name:"Wood 2",kind:"Apartment",place:"Piesendorf, between Zell am See and Kaprun",short:"Piesendorf",ll:[47.28996,12.71663],total:1940,
+     rooms:"2 bedrooms (king + single; bunk) + 2 pull-out sofas · 1 bathroom",rating:"Airbnb ★ 4.75 · 4 reviews",cancel:"Free cancellation for 24 h after booking; partial refund before 31 Jan",
+     note:"CHF 1,846 on Airbnb plus €2.50 per person per night tourist tax paid on site (about CHF 94). One bathroom for eight.",noteKind:"warn",
+     url:"https://www.airbnb.com/rooms/760841650332384273?check_in=2027-02-07&check_out=2027-02-12&adults=8",link:"Airbnb"}
 };
-var KEYS=["A","B","C"], NIGHTS=5, PEOPLE=7;
+var KEYS=["A","B"], NIGHTS=5, PEOPLE=8;
 var ROUTES={
-AS2:"ygq_H_}enAuCqRd@zWqD}EvGnRnj@qQn`@kBqa@na@uW`HsIzKmHsCaNzRcNuHg@v}@mElKtCvNsGvDeJro@iMmm@}LyM}A`x@nHry@jPr^DpmFnEby@tWhrAIreAuGxeAtDlPbZbb@h@|gB_NrdAae@`Wya@dcAnEpbA{LbEcIjN_Q{]",
-AK1:"ygq_H_}enAuCqRd@zWqD}EvGnRnj@qQn`@kBqa@na@uW`HsIzKmHsCaNzRcNuHg@v}@mElKtCvNsGvDeJro@iMmm@}LyM}A`x@nHry@jPr^DpmFnEby@nWloACnhAuGxeAtDlPbZbb@z@jbBqNdjAae@`Wya@dcA|Fn~@{YpYdLxbAlExzAbIxv@vJbYdMcFtYce@vb@q]tKoAjJjJz@iF",
-AC1:"ygq_H_}enAuCqRd@zWqD}EvGnRnj@qQn`@kBqa@na@uW`HsIzKmHsCaNzRcNuHg@v}@mElKtCvNsGvDeJro@iMmm@}LyM}A`x@nHry@jPr^DpmFnEby@nWloACnhAuGxeAtDlP|U|VnDvQXhwA}J`dAiJlRy]nM_d@dgAc`A~v@mt@}Wu`A~Nqk@_B}g@oOar@we@cvAcDmFmE`BfRkOha@gS`~BjP~eBuQtsAzClaAsFho@vGf^YxV{SreAPr]iz@vkBuD|[pC~@",
-BS1:"wbg`H{|kmAeApBlApBrb@d`@tDbPmNtk@}NfIqFoA|FlRk@pc@uC~QXv\\_AdL_F`MfDbNlCb@p@tPyFJMsInPeCzY}TrK{Bdg@`OdLFxQ_Flf@j]nVrHbbAJvUxCbJtExFgAdc@fHpNkBvb@vFna@]WxM`AN",
-BK1:"wbg`H{|kmAFbFrb@d`@tDbPmNtk@oVvF|FlRgDhtA_HfZtHfOp@tPyFJMsI~w@_]dg@`O~^wE|}@~f@~{AdE`r@ve@pl@nPxl@h@xz@iNrr@dXp\\oQfWvz@dO|rCbIxv@pJzXjM{EtYce@vb@q]tKoAjJjJz@iF",
-BC6:"wbg`H{|kmAeApB{Vag@uXo]aF_NmWyQuPn@yKhQmSmJkJbEgOiB}IrZqNvQ{LfWeMrCiDbGPpEoNhNgIpc@Fh[sDjSiFrK_S|MwF`ScLzRaDrRGdm@|C`y@_AvZnG~{@uCrg@Nd[sBpTo@pj@lFby@cEvX@r]oEpZt@vk@jD`A",
-CS2:"{gs_HevrlAeAyK_FwUw@{NlBgaAbEe^JwLuA_OwKqWcIyv@kEu}@p@_XsG{]g@yRiBwTkFoRy@F_HcK",
-CK1:"{gs_HevrlAeAyK_FwUw@{NlBgaAvEec@GwGyAiKFaBf@g@pFaAfC{AtOqX~HqK~DeEbAi@`@NDo@fCeCbU{PbEsApEB`@jBhI~Fz@iF",
-CC1:"{gs_HevrlA}Imr@|HenBmNqg@cIyv@yCuvAeLmgAqUgs@m\\dVsr@eXyz@hNwf@Esr@sQar@we@cvAcDqEgFdA`SkOha@gS`~BjP~eBuQtsAzClaAsFho@vGf^YxV{SreAPr]iz@vkBuD|[pC~@"
+AS2:"wzr_HigmlAHdCwJsa@}JulAhI_{@_Jey@lBgaAnE}k@uA_OwKqWcIyv@kEu}@p@_XsG{]qCqh@kFoRyI{J",
+AK1:"wzr_HigmlAHdCwJsa@}JulA\\cO`Gsa@j@kKiAmO_FwUw@{NlBgaAvEec@aBiVhL_FtYce@vb@q]bEsApEB`@jBhI~Fz@iF",
+AC1:"wzr_HigmlAmJm]}JulAhI_{@_Jey@|HenBmNqg@cIyv@yCuvAeLmgA_Umr@_]jUsr@eXyz@hNwf@Esr@sQar@we@cvAcDcEmFv@fSkOha@gS`~BjP~eBuQtsAzClaAsFho@vGf^YxV{SreAPr]iz@vkBuD|[pC~@",
+BS2:"{gs_HevrlAeAyK_FwUw@{NlBgaAbEe^JwLuA_OwKqWcIyv@kEu}@p@_XsG{]g@yRiBwTkFoRy@F_HcK",
+BK1:"{gs_HevrlAeAyK_FwUw@{NlBgaAvEec@GwGyAiKFaBf@g@pFaAfC{AtOqX~HqK~DeEbAi@`@NDo@fCeCbU{PbEsApEB`@jBhI~Fz@iF",
+BC1:"{gs_HevrlA}Imr@|HenBmNqg@cIyv@yCuvAeLmgAqUgs@m\\dVsr@eXyz@hNwf@Esr@sQar@we@cvAcDqEgFdA`SkOha@gS`~BjP~eBuQtsAzClaAsFho@vGf^YxV{SreAPr]iz@vkBuD|[pC~@"
 };
 var BASE={
 trunk:["qnu_HggamAiZ|Oeq@gXwz@hN{l@i@ql@oPeu@wf@","w}a`HukcmAoc@i[yYbF","oiu_HgqamAcMvQ"],
@@ -520,7 +511,7 @@ var nearAny={}; KEYS.forEach(function(k){["S","K","C"].forEach(function(h){nearA
 /* ---------- side panel ---------- */
 var panel=el("#panel");
 function renderAll(){
-  var h='<p class="p-k">The shortlist · tap one</p><div class="cards">';
+  var h='<p class="p-k">The two options · tap one</p><div class="cards">';
   KEYS.forEach(function(k){
     var s=STAYS[k];
     h+='<button type="button" class="card" data-pick="'+k+'"><div class="card-top"><span class="badge">'+k+'</span><div><div class="card-n">'+esc(s.name)+'</div><div class="card-pl">'+esc(s.short)+'</div></div>'+
@@ -528,13 +519,13 @@ function renderAll(){
     ["S","K","C"].forEach(function(hh){ var id=NEAR[k][hh]; h+='<span class="h-'+hh+'">'+HILLS[hh].name.replace("Schmittenhöhe","Schmitten").replace("Kitzsteinhorn","Kitz")+'<b>'+DRIVE[k][id][0]+'′</b></span>'; });
     h+='</div></button>';
   });
-  h+='</div><p class="panel-foot">Minutes are one-way drives to the closest lift on each mountain. Wood 2 costs CHF 82 more per person than Örgenbauer and cuts the drive to Schmittenhöhe from 15 to 6 min and to Kaprun from 24 to 6.</p>';
+  h+='</div><p class="panel-foot">Minutes are one-way drives to the closest lift on each mountain. The Tauernhütte is CHF 85 cheaper in total and has a shower room per bedroom; Wood 2 is 2–3 minutes closer to each mountain.</p>';
   panel.innerHTML=h;
 }
 function renderStay(k){
   var s=STAYS[k], pp=s.total/PEOPLE, ppn=s.total/(NIGHTS*PEOPLE);
   var h='<div class="p-head"><span class="badge">'+k+'</span><div><div class="p-name">'+esc(s.name)+'</div><div class="p-place">'+esc(s.kind)+' · '+esc(s.place)+'</div></div></div>'+
-    '<div class="p-price">'+chf(s.total)+'</div><div class="p-price-sub">total for 5 nights, 7 guests · ≈ '+eur(s.total)+'</div>'+
+    '<div class="p-price">'+chf(s.total)+'</div><div class="p-price-sub">total for 5 nights, '+PEOPLE+' guests · ≈ '+eur(s.total)+'</div>'+
     '<div class="p-split"><div><b>'+chf(ppn)+'</b><span>per person per night</span></div><div><b>'+chf(pp)+'</b><span>each, whole trip</span></div></div>'+
     '<p class="p-h">Closest lift on each mountain</p><ul class="p-lifts">';
   ["S","K","C"].forEach(function(hh){
@@ -545,7 +536,7 @@ function renderStay(k){
   h+='</ul><div class="p-sum"><span>Three drives added up</span><b>'+sumOf(k)+' min</b></div>'+
     '<p class="p-meta">'+esc(s.rooms)+'<br>'+esc(s.rating)+'<br>'+esc(s.cancel)+'</p>'+
     '<p class="p-note'+(s.noteKind==="ok"?" ok":"")+'">'+esc(s.note)+'</p>'+
-    '<a class="p-link" href="'+esc(s.url)+'" target="_blank" rel="noopener">Open on Airbnb ↗</a>';
+    '<a class="p-link" href="'+esc(s.url)+'" target="_blank" rel="noopener">Open '+esc(s.link)+' ↗</a>';
   panel.innerHTML=h;
 }
 
@@ -568,13 +559,13 @@ function renderTables(){
       '<td'+b(cols[0])+'><div class="num">'+chf(s.total)+'<small>≈ '+eur(s.total)+'</small></div></td>'+
       '<td'+b(cols[1])+'><div class="num">'+chf(cols[1].v(k))+'<small>'+chf(s.total/PEOPLE)+' each</small></div></td>';
     ["S","K","C"].forEach(function(hh,i){var id=NEAR[k][hh];h+='<td'+b(cols[2+i])+'><div class="num">'+DRIVE[k][id][0]+' min<small>'+esc(LIFTS[id].name)+', '+esc(LIFTS[id].place.split(",")[0].replace(" village",""))+'</small></div></td>';});
-    h+='<td'+b(cols[5])+'><div class="num">'+sumOf(k)+' min</div></td><td><a class="p-link" href="'+esc(s.url)+'" target="_blank" rel="noopener">Airbnb ↗</a></td></tr>';
+    h+='<td'+b(cols[5])+'><div class="num">'+sumOf(k)+' min</div></td><td><a class="p-link" href="'+esc(s.url)+'" target="_blank" rel="noopener">'+esc(s.link)+' ↗</a></td></tr>';
   });
   el("#sum").innerHTML=h+'</tbody>';
 
-  var f='<thead><tr><th>Valley station</th><th>A · Wolke 26</th><th>B · Örgenbauer</th><th>C · Wood 2</th></tr></thead><tbody>';
+  var f='<thead><tr><th>Valley station</th>'+KEYS.map(function(k){return '<th>'+k+' · '+esc(STAYS[k].name)+'</th>';}).join('')+'</tr></thead><tbody>';
   ["S","K","C"].forEach(function(hh){
-    f+='<tr class="grp h-'+hh+'"><td colspan="4">'+HILLS[hh].name+'</td></tr>';
+    f+='<tr class="grp h-'+hh+'"><td colspan="'+(KEYS.length+1)+'">'+HILLS[hh].name+'</td></tr>';
     LIFT_ORDER.forEach(function(id){
       var L=LIFTS[id]; if(L.h!==hh) return;
       f+='<tr class="h-'+hh+'"><td class="lname"><b>'+esc(L.name)+'</b><span>'+esc(L.place)+'</span></td>';
@@ -691,9 +682,9 @@ function pinEl(k){var e=stayM[k].getElement();return e&&e.querySelector(".pin");
 function stayPopup(k){
   var s=STAYS[k];
   var h='<div class="pop"><div class="pop-k"><span class="badge">'+k+'</span>'+esc(s.kind)+' · '+esc(s.short)+'</div><div class="pop-n">'+esc(s.name)+'</div>'+
-    '<div class="pop-p">'+chf(s.total)+'<small>total · 5 nights · 7 guests · ≈ '+eur(s.total)+'</small></div>'+
+    '<div class="pop-p">'+chf(s.total)+'<small>total · 5 nights · '+PEOPLE+' guests · ≈ '+eur(s.total)+'</small></div>'+
     '<div class="pop-s"><div>'+chf(s.total/(NIGHTS*PEOPLE))+'<small>per person / night</small></div><div>'+chf(s.total/PEOPLE)+'<small>each, whole trip</small></div></div>'+
-    '<a class="go" href="'+esc(s.url)+'" target="_blank" rel="noopener">Open on Airbnb ↗</a></div>';
+    '<a class="go" href="'+esc(s.url)+'" target="_blank" rel="noopener">Open '+esc(s.link)+' ↗</a></div>';
   L.popup({offset:[0,-40],maxWidth:280,autoPanPadding:[20,20],className:"stay-pop"}).setLatLng(s.ll).setContent(h).openOn(map);
 }
 
